@@ -1,14 +1,14 @@
 <nav class="navbar navbar-expand-md bg-transparent default top-nav-collapse p-0">
-    <div class="container-fluid">
+    <div class="container">
         <a class="navbar-brand bg-transparent mr-0" href="{{ route('home') }}">
-             <img style="height: 70px;" src="{{url("logos/logo.webp")}}" alt="logo" />
+             {{-- <img style="height: 70px;" src="{{url("logos/logo.webp")}}" alt="logo" /> --}}
              {{-- <h6>{{__("ChessHub")}}</h6> --}}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <h1 class="navbar-brand-heading">{{__("SCRIPTS&CANVAS")}}</h1>
+        <h1 class="navbar-brand-heading my-3">{{__("Kericho Chess")}} <br> {{__("Club")}}  </h1>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0 font-weight-bold">
                 <li class="nav-item px-2">
@@ -118,18 +118,16 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function(){
-        let ost = 0;
+        let ost = 50;
         document.addEventListener("scroll", function() {
             let cOst = document.documentElement.scrollTop;
             if (cOst == 0) {
-                document.querySelector(".navbar").classList.add("top-nav-collapse");
-            } else if (cOst > ost) {
-                document.querySelector(".navbar").classList.add("top-nav-collapse");
+                // document.querySelector(".navbar").classList.add("top-nav-collapse");
                 document.querySelector(".navbar").classList.remove("default");
-            } else {
-                document.querySelector(".navbar").classList.remove("top-nav-collapse");
+            } else if (cOst > ost) {
+                // document.querySelector(".navbar").classList.add("top-nav-collapse");
                 document.querySelector(".navbar").classList.add("default");
-            }
+            } 
             ost = cOst;
         });
 
@@ -150,6 +148,8 @@
 </script>
 
 <style>
+
+    
     .navbar-brand-heading
     {
         font-family: "Montserrat", serif;

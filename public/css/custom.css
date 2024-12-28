@@ -11,6 +11,11 @@ body{
     font-style: normal; */
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .nav-item .active{
     color: #fff !important;
     background: maroon;
@@ -18,6 +23,18 @@ body{
 
 .nav-link {
     font-size: .9rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+}
+
+.default{
+    /* position: fixed; */
+    background-color: rgba(0, 0, 0, .8) !important;
+    transition: all ease-in-out .3s;
 }
 
 .navbar .dropdown-menu{
@@ -58,15 +75,16 @@ body{
 
 .hero-section {
     z-index: -10;
-    top: -80px;
+    /* top: -80px; */
     position: relative;
     width: 100%;
     height: 100vh; /* Full-screen height */
-    background: url('../images/hero_bg.jpg') no-repeat center center/cover;
+    background: url('../images/chesshero.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-attachment: fixed;
 }
 
 .hero-section .overlay {
@@ -124,7 +142,7 @@ body{
 
 .custom-icons {
     color: rgb(128, 0, 0);
-    font-size: 5.5rem;
+    font-size: 2.5rem;
 }
 
 .btn-custom-package {
@@ -135,6 +153,23 @@ body{
 
 .text-primary-custom{
     color: maroon;
+}
+
+.services-section {
+    background-color: #F0F4F8;;
+}
+
+.services-section h4 {
+    color: maroon;
+    font-size: 20px;
+}
+
+.services-section p {
+    font-size: 14px;
+}
+
+.card-custom {
+    background-color: #ffffff;
 }
 
 .package-card {

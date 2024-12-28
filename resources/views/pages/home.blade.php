@@ -2,14 +2,14 @@
 <html lang="en" dir="{{ env('SITE_RTL') == 'on' ? 'rtl' : '' }}">
 <head>
     <title>
-        {{  config('app.name', 'Scripts&Canvas') }}
+        {{  config('app.name', 'Kericho Chess Club') }}
     </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Scripts&Canvas, Software Engineering." />
-    <meta name="keywords" content="software engineering, web development, " />
-    <meta name="author" content="scripts&canvas" />
+    <meta name="description" content="Scripts&Canvas, Kericho Chess Club." />
+    <meta name="keywords" content="Kericho Chess Club, web development, " />
+    <meta name="author" content="Kericho Chess Club" />
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
@@ -46,7 +46,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="w-100">
 
         @include('partials.nav')
         
@@ -70,39 +70,80 @@
     </section>
 
     <section class="services-section py-5">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-2">What We Offer</h2>
-            <p class="fw-bold mb-5">Our Services</p>
-            <div class="row g-4">
-                <div class="col-md-3 col-sm-12">
-                    <div class="service-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-laptop-code custom-icons mb-5"></i>
-                        <h4>Web Development</h4>
-                        <p>We build responsive, fast, and secure websites tailored to your needs.</p>
+        <div class="container">
+            <h2 class="fw-bold mb-2 display-5">What We Offer</h2>
+            <p class="fw-semibold text-muted">Explore our wide range of services tailored for the chess community.</p>
+            <div class="row g-4 justify-content-between mt-5">
+                {{-- <div class="row" data-aos="fade-up" data-aos-delay="200"> --}}
+                    <div class="row card-custom p-3 col-md-6 col-sm-12 px-3">
+                        <div class="col-2 d-flex justify-content-center">
+                            <div class="icon-box">
+                                <i class="fa fa-laptop custom-icons"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h4>
+                                <a class="" href="services/training">Chess Training</a>
+                            </h4>
+                            <p>
+                                Kericho Chess Club offers a multifaceted training program that caters to diverse demographics within the chess community. Designed for parents, juniors, and trainers,..
+                                <a class="" href="services/training">Learn more</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="service-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-cogs custom-icons mb-5"></i>
-                        <h4>Automation Solutions</h4>
-                        <p>Streamline your processes with custom automation tools and workflows.</p>
+
+                    <div class="row card-custom p-3 col-md-6 col-sm-12 px-3">
+                        <div class="col-2 d-flex justify-content-center">
+                            <div class="icon-box">
+                                <i class="fa fa-trophy custom-icons"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h4>
+                                <a class="" href="services/training">Tournaments and Events</a>
+                            </h4>
+                            <p>
+                                We organize local, regional, and national chess tournaments, providing players with opportunities to compete and showcase their skills. Join our regular events to experience the thrill of competitive chess and win exciting prizes.
+                                <a class="" href="services/training">Learn more</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="service-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-chart-line mb-5 custom-icons"></i>
-                        <h4>Business Growth</h4>
-                        <p>Leverage our expertise to scale and expand your business efficiently.</p>
+
+                    <div class="row card-custom p-3 col-md-6 col-sm-12  mt-3 px-3">
+                        <div class="col-2 d-flex justify-content-center">
+                            <div class="icon-box">
+                                <i class="fa fa-book custom-icons"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h4>
+                                <a class="" href="services/training">Chess Library and Resources</a>
+                            </h4>
+                            <p>
+                                Enhance your chess knowledge with access to our comprehensive library of chess books, magazines, and digital resources. Learn openings, strategies, and endgames to become a better player.
+                                <a class="" href="services/training">Learn more</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-server mb-4 custom-icons mb-5"></i>
-                        <h4>Web Hosting</h4>
-                        <p>Reliable and secure hosting solutions to keep your website online and running smoothly.</p>
+
+                    <div class="row card-custom p-3 col-md-6 col-sm-12 mt-3 px-3">
+                        <div class="col-2 d-flex justify-content-center">
+                            <div class="icon-box">
+                                <i class="fa fa-briefcase custom-icons"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h4>
+                                <a class="" href="services/training">Corporate Chess Programs</a>
+                            </h4>
+                            <p>
+                                Boost your team's strategic thinking and problem-solving skills through our corporate chess programs. We offer workshops and sessions tailored to organizations looking to use chess as a team-building tool.
+                                <a class="" href="services/training">Learn more</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                
+                    
+                {{-- </div> --}}   
             </div>
         </div>
     </section>
