@@ -1,1 +1,0 @@
-# Kitui-Chess-Club
