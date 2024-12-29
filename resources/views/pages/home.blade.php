@@ -43,6 +43,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -74,11 +76,11 @@
             <h2 class="fw-bold mb-2 display-5">What We Offer</h2>
             <p class="fw-semibold text-muted">Explore our wide range of services tailored for the chess community.</p>
             <div class="row g-4 justify-content-between mt-5">
-                {{-- <div class="row" data-aos="fade-up" data-aos-delay="200"> --}}
+                {{-- <div class="row" data-aos-delay="200"> --}}
                     <div class="row card-custom p-3 col-md-6 col-sm-12 px-3">
                         <div class="col-2 d-flex justify-content-center">
                             <div class="icon-box">
-                                <i class="fa fa-laptop custom-icons"></i>
+                                <i class="bi bi-laptop custom-icons"></i>
                             </div>
                         </div>
                         <div class="col-10">
@@ -87,7 +89,7 @@
                             </h4>
                             <p>
                                 Kericho Chess Club offers a multifaceted training program that caters to diverse demographics within the chess community. Designed for parents, juniors, and trainers,..
-                                <a class="" href="services/training">Learn more</a>
+                                <a class="services-anchor mx-3" href="services/training">Learn more</a>
                             </p>
                         </div>
                     </div>
@@ -95,7 +97,7 @@
                     <div class="row card-custom p-3 col-md-6 col-sm-12 px-3">
                         <div class="col-2 d-flex justify-content-center">
                             <div class="icon-box">
-                                <i class="fa fa-trophy custom-icons"></i>
+                                <i class="bi bi-trophy custom-icons"></i>
                             </div>
                         </div>
                         <div class="col-10">
@@ -104,7 +106,7 @@
                             </h4>
                             <p>
                                 We organize local, regional, and national chess tournaments, providing players with opportunities to compete and showcase their skills. Join our regular events to experience the thrill of competitive chess and win exciting prizes.
-                                <a class="" href="services/training">Learn more</a>
+                                <a class="services-anchor mx-3" href="services/training">Learn more</a>
                             </p>
                         </div>
                     </div>
@@ -112,7 +114,7 @@
                     <div class="row card-custom p-3 col-md-6 col-sm-12  mt-3 px-3">
                         <div class="col-2 d-flex justify-content-center">
                             <div class="icon-box">
-                                <i class="fa fa-book custom-icons"></i>
+                                <i class="bi bi-book custom-icons"></i>
                             </div>
                         </div>
                         <div class="col-10">
@@ -121,7 +123,7 @@
                             </h4>
                             <p>
                                 Enhance your chess knowledge with access to our comprehensive library of chess books, magazines, and digital resources. Learn openings, strategies, and endgames to become a better player.
-                                <a class="" href="services/training">Learn more</a>
+                                <a class="services-anchor mx-3" href="services/training">Learn more</a>
                             </p>
                         </div>
                     </div>
@@ -129,7 +131,7 @@
                     <div class="row card-custom p-3 col-md-6 col-sm-12 mt-3 px-3">
                         <div class="col-2 d-flex justify-content-center">
                             <div class="icon-box">
-                                <i class="fa fa-briefcase custom-icons"></i>
+                                <i class="bi bi-briefcase custom-icons"></i>
                             </div>
                         </div>
                         <div class="col-10">
@@ -138,7 +140,7 @@
                             </h4>
                             <p>
                                 Boost your team's strategic thinking and problem-solving skills through our corporate chess programs. We offer workshops and sessions tailored to organizations looking to use chess as a team-building tool.
-                                <a class="" href="services/training">Learn more</a>
+                                <a class="services-anchor mx-3" href="services/training">Learn more</a>
                             </p>
                         </div>
                     </div>
@@ -148,86 +150,133 @@
         </div>
     </section>
     
-    <section class="packages-section py-5 bg-dark text-white">
+    <section id="about" class="about section-bg">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 d-flex justify-content-center img-box-about" >
+                    {{-- <a href="https://files.victoriachess.org/Content/video.mp4" class="glightbox play-btn mb-4"></a> --}}
+                    {{-- <img src="{{ asset('../images/chessstudents.jpg') }}" alt="about us image" srcset="" width="100%" height="100%"> --}}
+                </div><!--!-->
+
+                <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                    <h4 class="text-muted">About Us</h4>
+                    <h3 class="">Fostering Talent Through Chess</h3>
+                    <p class="">Welcome to Kericho Chess Club (KCC), a hub for fostering critical thinking, strategy, and community growth through chess. Our mission is to promote chess excellence and inspire individuals of all ages to achieve their potential.</p>
+
+                    <div class="row card-custom p-3 col-md-12 col-sm-12 px-3">
+                        <div class="col-2 d-flex justify-content-center">
+                            <div class="icon-box">
+                                <i class="bi bi-laptop custom-icons"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h4>
+                                <a class="" href="services/training">Chess Training</a>
+                            </h4>
+                            <p>
+                                Our training programs include beginner to advanced levels, focusing on game tactics, strategies, and sportsmanship. We cater to students, parents, and trainers to ensure holistic development.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row card-custom p-3 col-md-12 col-sm-12 px-3">
+                        <div class="col-2 d-flex justify-content-center">
+                            <div class="icon-box">
+                                <i class="bi bi-trophy custom-icons"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h4>
+                                <a class="" href="services/training">Chess Tournaments</a>
+                            </h4>
+                            <p>
+                                KCC organizes regular tournaments to provide players an opportunity to showcase their skills and compete at various levels. Join us and become part of a competitive yet supportive chess community.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row card-custom p-3 col-md-12 col-sm-12 px-3">
+                        <div class="col-2 d-flex justify-content-center">
+                            <div class="icon-box">
+                                <i class="bi bi-people custom-icons"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h4>
+                                <a class="" href="services/training">Community Outreach</a>
+                            </h4>
+                            <p>
+                                Through workshops and outreach programs, we engage schools and communities to nurture talent and promote the values of chess as a tool for education and social development.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-center">
+                        <a class="btn btn-primary" href="about">Read More</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <section class="sponsors-section py-5 bg-light">
         <div class="container text-center">
-            <h2 class="fw-bold mb-4 mt-4">Our Packages</h2>
-            <p class="text-white mb-5">Choose a package that fits your needs and budget. Designed to help you grow effortlessly.</p>
-            <div class="row g-4">
-                <!-- Basic Package -->
-                <div class="col-md-4">
-                    <div class="package-card p-4 shadow-sm bg-white rounded">
-                        <h3 class="fw-bold text-primary-custom mb-3">Basic</h3>
-                        <p class="text-muted">Perfect for individuals or small startups.</p>
-                        <h4 class="fw-bold mb-3 text-dark">$49/month</h4>
-                        <ul class="list-unstyled text-start mb-4 text-dark">
-                            <li><i class="fas fa-check text-success me-2"></i> 1 Website</li>
-                            <li><i class="fas fa-check text-success me-2"></i> 5GB Storage</li>
-                            <li><i class="fas fa-check text-success me-2"></i> Basic Support</li>
-                        </ul>
-                        <a href="#" class="btn-custom-package btn-lg py-2 px-4">Get Started</a>
+            {{-- <h2 class="fw-bold mb-4">Our Partners</h2> --}}
+            <div id="sponsorsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="sponsor1-logo.png" alt="Sponsor 1" class="img-fluid mx-3" style="height: 100px;">
+                            <img src="sponsor2-logo.png" alt="Sponsor 2" class="img-fluid mx-3" style="height: 100px;">
+                            <img src="sponsor3-logo.png" alt="Sponsor 3" class="img-fluid mx-3" style="height: 100px;">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="sponsor4-logo.png" alt="Sponsor 4" class="img-fluid mx-3" style="height: 100px;">
+                            <img src="sponsor5-logo.png" alt="Sponsor 5" class="img-fluid mx-3" style="height: 100px;">
+                            <img src="sponsor6-logo.png" alt="Sponsor 6" class="img-fluid mx-3" style="height: 100px;">
+                        </div>
                     </div>
                 </div>
-                <!-- Standard Package -->
-                <div class="col-md-4">
-                    <div class="package-card p-4 shadow-sm bg-white rounded">
-                        <h3 class="fw-bold text-primary-custom mb-3">Standard</h3>
-                        <p class="text-muted">Ideal for growing businesses and teams.</p>
-                        <h4 class="fw-bold mb-3 text-dark">$99/month</h4>
-                        <ul class="list-unstyled text-start mb-4 text-dark">
-                            <li><i class="fas fa-check text-success me-2"></i> 5 Websites</li>
-                            <li><i class="fas fa-check text-success me-2"></i> 50GB Storage</li>
-                            <li><i class="fas fa-check text-success me-2"></i> Priority Support</li>
-                            <li><i class="fas fa-check text-success me-2"></i> Free Domain</li>
-                        </ul>
-                        <a href="#" class="btn-custom-package btn-lg py-2 px-4">Get Started</a>
-                    </div>
-                </div>
-                <!-- Premium Package -->
-                <div class="col-md-4">
-                    <div class="package-card p-4 shadow-sm bg-white rounded">
-                        <h3 class="fw-bold text-primary-custom mb-3">Premium</h3>
-                        <p class="text-muted">Best for established businesses and enterprises.</p>
-                        <h4 class="fw-bold mb-3 text-dark">$199/month</h4>
-                        <ul class="list-unstyled text-start mb-4 text-dark">
-                            <li><i class="fas fa-check text-success me-2"></i> Unlimited Websites</li>
-                            <li><i class="fas fa-check text-success me-2"></i> Unlimited Storage</li>
-                            <li><i class="fas fa-check text-success me-2"></i> Dedicated Support</li>
-                            <li><i class="fas fa-check text-success me-2"></i> Advanced Analytics</li>
-                        </ul>
-                        <a href="#" class=" btn-custom-package btn-lg py-2 px-4">Get Started</a>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sponsorsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sponsorsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
     
-    <section class="why-choose-us-section py-5">
+    <section class="why-choose-us-section py-5" style="background-color: #F0F4F8;">
         <div class="container text-center">
-            <h2 class="fw-bold mb-4">Why Choose Us</h2>
-            <p class="text-muted mb-5">Discover the benefits of working with our expert team and innovative solutions.</p>
+            <h2 class="fw-bold mb-4">Why Choose Kericho Chess Club</h2>
+            <p class="text-muted mb-5">Discover the unique benefits of joining our vibrant chess community.</p>
             <div class="row g-4">
                 <!-- Feature 1 -->
                 <div class="col-md-4">
                     <div class="feature-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-user-shield fs-1  custom-icons mb-3"></i>
-                        <h4>Reliable Support</h4>
-                        <p>Our team is available 24/7 to address your concerns and provide assistance.</p>
+                        <i class="bi bi-people-fill fs-1 custom-icons mb-3"></i>
+                        <h4>Inclusive Community</h4>
+                        <p>We welcome players of all ages and skill levels to grow and thrive in chess.</p>
                     </div>
                 </div>
                 <!-- Feature 2 -->
                 <div class="col-md-4">
                     <div class="feature-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-trophy fs-1  custom-icons mb-3"></i>
-                        <h4>Proven Expertise</h4>
-                        <p>Years of experience delivering top-notch solutions for various industries.</p>
+                        <i class="bi bi-trophy-fill fs-1  custom-icons mb-3"></i>
+                        <h4>Award-Winning Coaches</h4>
+                        <p>Learn from the best with our experienced coaches who bring home championships.</p>
                     </div>
                 </div>
                 <!-- Feature 3 -->
                 <div class="col-md-4">
                     <div class="feature-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-rocket fs-1  custom-icons mb-3"></i>
-                        <h4>Innovative Solutions</h4>
-                        <p>We bring creative and modern ideas to help your business stand out.</p>
+                        <i class="bi bi-lightbulb-fill fs-1  custom-icons mb-3"></i>
+                        <h4>Strategic Thinking</h4>
+                        <p>Our programs enhance critical thinking and decision-making skills through chess.</p>
                     </div>
                 </div>
             </div>
@@ -235,97 +284,89 @@
                 <!-- Feature 4 -->
                 <div class="col-md-4">
                     <div class="feature-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-handshake fs-1  custom-icons mb-3"></i>
-                        <h4>Client-Centric Approach</h4>
-                        <p>We prioritize your goals and work collaboratively to achieve success.</p>
+                        <i class="bi bi-calendar-check-fill fs-1  custom-icons mb-3"></i>
+                        <h4>Regular Tournaments</h4>
+                        <p>Participate in local and national tournaments to showcase your skills.</p>
                     </div>
                 </div>
                 <!-- Feature 5 -->
                 <div class="col-md-4">
                     <div class="feature-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-chart-pie fs-1  custom-icons mb-3"></i>
-                        <h4>Data-Driven Results</h4>
-                        <p>Our strategies are backed by analytics to maximize efficiency and ROI.</p>
+                        <i class="bi bi-book-fill fs-1  custom-icons mb-3"></i>
+                        <h4>Comprehensive Training</h4>
+                        <p>Our curriculum is designed to cater to beginners, juniors, and advanced players.</p>
                     </div>
                 </div>
                 <!-- Feature 6 -->
                 <div class="col-md-4">
                     <div class="feature-card p-4 shadow-sm bg-white rounded">
-                        <i class="fas fa-thumbs-up fs-1  custom-icons mb-3"></i>
-                        <h4>Customer Satisfaction</h4>
-                        <p>We go the extra mile to ensure our clients are happy with the outcomes.</p>
+                        <i class="bi bi-heart-fill fs-1  custom-icons mb-3"></i>
+                        <h4>Passion for Chess</h4>
+                        <p>We’re dedicated to fostering a love for chess in our community and beyond.</p>
                     </div>
                 </div>
+            </div>
+            <p class="text-center my-5">
+                <a class="btn btn-primary" href="about">Read More</a>
+            </p>
+        </div>
+    </section>
+    
+   
+
+    <section class="register-now-section text-center text-white py-5" style="background: url('images/chessboard.jpg') center/cover no-repeat; background-attachment: fixed; position: relative;">
+        <div class="overlay" style="background: rgba(128, 0, 0, .1); top: 0; left: 0; width: 100%; height: 100%; position: absolute; z-index: 0"></div>
+        <div class="container py-5" style="z-index: 2; position: relative;">
+            <h2 class="fw-bold mb-4">Join the Kericho Chess Club Today!</h2>
+            <p class="fs-5 mb-4">Improve your skills, compete in tournaments, and be part of a vibrant chess community.</p>
+            <a href="/register" class="btn btn-primary btn-lg px-5">Register Now</a>
+        </div>
+    </section>
+    
+    
+    <section class="testimonials-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">What Our Members Say</h2>
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-card p-4 bg-light shadow rounded">
+                            <img src="images/avatar1.jpg" alt="John Doe" class="rounded-circle mb-3" width="80" height="80">
+                            <p class="fs-5 text-muted">"Joining the Kericho Chess Club has been an incredible journey. The community and coaching are exceptional!"</p>
+                            <h5 class="fw-bold mt-3">- John Doe</h5>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card p-4 bg-light shadow rounded">
+                            <img src="images/avatar2.jpg" alt="Jane Smith" class="rounded-circle mb-3" width="80" height="80">
+                            <p class="fs-5 text-muted">"I’ve learned so much from the tournaments and met amazing people along the way."</p>
+                            <h5 class="fw-bold mt-3">- Jane Smith</h5>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card p-4 bg-light shadow rounded">
+                            <img src="images/avatar3.jpg" alt="Alex Kim" class="rounded-circle mb-3" width="80" height="80">
+                            <p class="fs-5 text-muted">"The training sessions are top-notch, and my game has improved significantly."</p>
+                            <h5 class="fw-bold mt-3">- Alex Kim</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
     
-    <section class="contact-details-section py-5 bg-light">
-        <div class="overlay"></div>
-        <div class="container">
-            
-            <h2 class="fw-bold text-center mb-4 text-white">Get In Touch</h2>
-            <p class="text-center mb-5 text-white">We’d love to hear from you. Reach out to us through any of the methods below.</p>
-            <div class="row g-5">
-                <!-- Contact Details -->
-                <div class="col-md-6">
-                    <div class="row g-4">
-                        <!-- Location -->
-                        <div class="col-12">
-                            <div class="contact-card p-4 shadow-sm bg-white rounded text-center">
-                                <i class="fas fa-map-marker-alt fs-1  custom-icons mb-3"></i>
-                                <h5>Our Location</h5>
-                                <p>123 Business Avenue, Suite 101<br>Cityville, Country</p>
-                            </div>
-                        </div>
-                        <!-- Phone -->
-                        <div class="col-12">
-                            <div class="contact-card p-4 shadow-sm bg-white rounded text-center">
-                                <i class="fas fa-phone-alt fs-1 custom-icons mb-3"></i>
-                                <h5>Call Us</h5>
-                                <p>+1 234 567 890<br>+1 987 654 321</p>
-                            </div>
-                        </div>
-                        <!-- Email -->
-                        <div class="col-12">
-                            <div class="contact-card p-4 shadow-sm bg-white rounded text-center">
-                                <i class="fas fa-envelope fs-1 custom-icons mb-3"></i>
-                                <h5>Email Us</h5>
-                                <p>support@example.com<br>info@example.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact Form -->
-                <div class="col-md-6">
-                    <div class="contact-form text-white">
-                        <h3 class="fw-bold mb-4">Send Us a Message</h3>
-                        <form class="text-start">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" id="subject" class="form-control" placeholder="Enter your subject" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea id="message" class="form-control" rows="5" placeholder="Write your message here" required></textarea>
-                            </div>
-                            <div class="text-center mt-3">
-                                <button type="submit" class="btn btn-custom px-4 py-2">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     
 
     @include('partials.footer')

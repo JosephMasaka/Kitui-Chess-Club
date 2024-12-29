@@ -29,12 +29,14 @@ header {
     position: fixed;
     top: 0;
     /* left: 0; */
+    z-index: 1000;
 }
 
 .default{
     /* position: fixed; */
     background-color: rgba(0, 0, 0, .8) !important;
     transition: all ease-in-out .3s;
+    z-index: 1000;
 }
 
 .navbar .dropdown-menu{
@@ -136,13 +138,60 @@ header {
     position: relative;
 }
 
+.btn-primary {
+    background-color: rgb(128, 0, 0) !important;
+    outline: none;
+    border-radius: 0%;
+    border: rgb(128, 0, 0);
+    border: 2px solid rgb(128, 0, 0);
+}
+
+.btn-primary:hover {
+    background-color: transparent !important;
+    color: rgb(128, 0, 0);
+    border: 2px solid rgb(128, 0, 0);
+}
+
 .btn-custom:hover{
     background-color: rgb(128, 0, 0);
 }
 
 .custom-icons {
     color: rgb(128, 0, 0);
-    font-size: 2.5rem;
+    font-size: 2rem;
+    /* padding: 20px;
+    border: 2px solid rgba(128, 0, 0, .8);
+    background-color: rgba(128, 0, 0, .1);
+    border-radius: 50%; */
+}
+
+#about.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Adjust padding for better icon fit */
+    border: 3px solid rgba(128, 0, 0, 0.8); /* Dark red border */
+    border-radius: 50%; /* Makes it circular */
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height (same as width for circle) */
+    text-align: center; /* Centers text/icon */
+    background-color: rgba(255, 255, 255, 0.2); /* Optional: Add a background */
+}
+
+#about.icon-box:hover {
+    background-color: maroon; /* Optional: Change background color on hover */
+    color: #fff;
+    cursor: pointer;
+}
+
+#about.icon-box:hover i{
+     /* Optional: Change background color on hover */
+    color: #fff;
+}
+
+#about .custom-card:hover .icon-box{
+    background-color: maroon; /* Optional: Change background color on hover */
+    color: #fff;
 }
 
 .btn-custom-package {
@@ -155,6 +204,7 @@ header {
     color: maroon;
 }
 
+/***************************************************************************/
 .services-section {
     background-color: #F0F4F8;;
 }
@@ -164,30 +214,27 @@ header {
     font-size: 20px;
 }
 
-.services-section p {
+.services-section p, .about p{
     font-size: 14px;
 }
 
 .card-custom {
     background-color: #ffffff;
 }
-
-.package-card {
-    transition: transform 0.3s, box-shadow 0.3s;
+.services-anchor{
+    color: maroon;
+    font-weight: 600;
 }
 
-.package-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+/******************************/
+.about h4 {
+    font-size: 18px;
+}
+.img-box-about {
+    background: url("../images/chessstudents.jpg") no-repeat center center/cover;
 }
 
-.packages-section h2 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.packages-section ul li {
-    margin-bottom: 10px;
-}
+/******************************/
 
 .feature-card {
     transition: transform 0.3s, box-shadow 0.3s;
@@ -206,6 +253,17 @@ header {
 .why-choose-us-section p {
     color: #6c757d;
 }
+
+/****************************************/
+.carousel-control-prev, .carousel-control-next {
+    background: maroon;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/******************************/
 
 .contact-details-section{
     background: url("../images/contact.jpg") no-repeat center center/cover;
