@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-transparent default top-nav-collapse p-0">
+<nav class="navbar navbar-expand-md bg-transparent top-nav-collapse p-0">
     <div class="container">
         <a class="navbar-brand bg-transparent mr-0" href="{{ route('home') }}">
              {{-- <img style="height: 70px;" src="{{url("logos/logo.webp")}}" alt="logo" /> --}}
@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0 font-weight-bold">
                 <li class="nav-item px-2">
-                    <a class="nav-link px-4 {{ Request::routeIs('home') ? '' : 'active'}}" href="{{ route('home') }}">Home</a>
+                    <a class="nav-link px-4 {{ Request::routeIs('/') ? '' : 'active'}}" href="{{ route('home') }}">Home</a>
                 </li>
                 
                 <!------------------ Dropdown ------------------->
@@ -121,7 +121,7 @@
         let ost = 50;
         document.addEventListener("scroll", function() {
             let cOst = document.documentElement.scrollTop;
-            if (cOst == 0) {
+            if (cOst == 0 ) {
                 // document.querySelector(".navbar").classList.add("top-nav-collapse");
                 document.querySelector(".navbar").classList.remove("default");
             } else if (cOst > ost) {
